@@ -1,9 +1,15 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
+import Footer from '../../footer/footer';
+import Navbar from '../../navbar/navbar';
 
 function Layout() {
   return (
-    <div>Layout</div>
+    <div className="layout">
+        <Navbar/>
+            <Outlet/>
+        <Footer/>
+    </div>
   )
 }
 
